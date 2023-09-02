@@ -62,7 +62,7 @@ bool isPossible(vector<int>& arr, int n, int m, int mid) {
 
 int findPages(vector<int>& arr, int n, int m) {
     if(m > n) return -1;
-    int left = *max_element(arr.begin(), arr.end());
+    int left = 0;
     int right = accumulate(arr.begin(), arr.end(), 0);
     int ans = -1;
     int mid;
